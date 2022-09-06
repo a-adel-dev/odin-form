@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
     <title>Input Form</title>
   </head>
   <body>
@@ -61,7 +62,7 @@
       </p>
     </div>
     <div class="right">
-      <div class="intro-text">
+      <div class="intro-text container">
         <p>
           This is not a real online service! You know you need something like this in your life to help you realize your
           deepest dreams.
@@ -69,21 +70,21 @@
         <p>Sign up <span>now</span> to get started.</p>
         <p>You <span>know</span> you want to.</p>
       </div>
-      <form action="./my-imaginary-server" class="form" method="post">
-        <div class="form-area">
-          <h3>Let's do this</h3>
+      <form action="#" class="form">
+        <div class="form-area container">
+          <h3>Let's do this!</h3>
           <ul>
             <li>
               <label for="first-name">First name</label>
-              <input type="text" name="first-name" id="first-name" />
+              <input type="text" name="first-name" id="first-name" required />
             </li>
             <li>
               <label for="last-name">Last name</label>
-              <input type="text" name="last-name" id="last-name" />
+              <input type="text" name="last-name" id="last-name" required />
             </li>
             <li>
               <label for="email">email</label>
-              <input type="email" name="email" id="email" />
+              <input type="email" name="email" id="email" required />
             </li>
             <li>
               <label for="phone">phone number</label>
@@ -92,6 +93,7 @@
             <li>
               <label for="pass">password</label>
               <input type="password" name="pass" id="pass" />
+              <p class="invalid-pass">*Passwords do not match</p>
             </li>
             <li>
               <label for="pass-repeat">repeat password</label>
@@ -100,11 +102,11 @@
           </ul>
         </div>
         <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
       </form>
-      <p>Already have an account? <a href="#">Log in</a></p>
-      <footer>
-        Developed by <a href="https://github.com/a-adel-dev">Ahmad Adel</a> |
-        <a href="https://github.com/a-adel-dev/odin-form">Source</a>
+      <footer class="footer container">
+        Developed by <a href="https://github.com/a-adel-dev" target="_blank">Ahmad Adel</a> |
+        <a href="https://github.com/a-adel-dev/odin-form" target="_blank">Source</a>
       </footer>
     </div>
   </body>
